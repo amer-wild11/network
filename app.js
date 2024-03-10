@@ -22,7 +22,7 @@ mongoose
     console.log(`database connected successfuly`);
   })
   .catch((err) => {
-    console.log(`an error while connecting with database`);
+    console.log(`an error while connecting with database`, err);
   });
 
 app.get("/", (req, res) => {
